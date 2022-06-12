@@ -3,6 +3,7 @@ let cyan;
 let magenta;
 
 function preload() {
+    myFont = loadFont('fonts/Coronette.otf');
     yellow = loadImage('img/yellow.png');
     cyan = loadImage('img/cyan.png');
     magenta = loadImage('img/magenta.png');
@@ -17,10 +18,15 @@ function setup() {
 
 function draw() {
     background(254, 239, 198);
+    fill(51, 153, 153);
+    textFont(myFont)
+        .strokeWeight(0)
+        .textSize(32);
+    text('CREATING A MULTICOLOR SCREEN PRINT', 200, 280);
     fill(51, 153, 153)
         .strokeWeight(0)
         .textSize(16);
-    text('drag mouse slowly from left to right  - - - >', 340, 800);
+    text('drag mouse slowly across the image from left to right  - - - >', 280, 800);
     push();
     pop();
     image(yellow, 300, 300);
