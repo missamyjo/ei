@@ -1,0 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Holtwood One SC', serif;
+  color: "red";
+}

@@ -28,7 +28,7 @@ function draw() {
 
 function mouseClicked() {
     var index = int(random(15));
-    image(imgs[index], 525, 700);
+    image(imgs[index], mouseX, mouseY, 525, 700);
 }
 var introList = new Array("Fight", "Nevertheless", "March", "Human Rights", "As long as", "Because", "Revolution", "Vote", "Still", "Smash");
 var pointsList = new Array("the", "she", "for", "are", "like", "we", "girl style", "out", "because", "Protest", "better", "Love");
