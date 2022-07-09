@@ -1,0 +1,45 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Holtwood One SC', serif;
+}
+
+h2,p{
+  text-align: center;
+}
+
+h1{
+  text-align: left;
+}
+
+h2{
+  font-size: xx-large;
+}
+
+main{
+  display:block;
+  width:612px;
+  height:792px;
+  position: absolute;
+  top:25px;
+  left:30%;
+}/*in theory this should be the #images div but the canvas wants to draw in main. i tried to get it to use the #images div as the parent but that didn't work.*/
+
+#button{
+  background-color: pink;
+  display:block;
+  position: absolute;
+  width:25%;
+  top:25px;
+  left:2px;
+}
+
+#text{
+  width:612px;
+  height:792px;
+  position: absolute;
+  top:25px;
+  left:100%;
+  z-index:5;
+}

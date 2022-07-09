@@ -8,27 +8,18 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(612, 792);//this is the size of a letter-sized page in 72 dpi
     background(255);
     imageMode(CENTER);
 }
 
 function draw() {
-    fill("black");
-    textFont(myFont)
-        .textSize(40);
-    text('CLICK! CLICK! CLICK!', 600, 200);
-    fill("black")
-        .textSize(16);
-    text('to make a protest poster', 500, 300);
-    fill("black")
-        .textSize(16);
-    text('with Miss Amy Jo!', 700, 325);
+    //I removed the text from the p5 file so that it's just the image randomizer to make it easier to deal with
 }
 
 function mouseClicked() {
     var index = int(random(8));
-    image(imgs[index], 775, 550);
+    image(imgs[index], width / 2, height / 2);//Centering the image on the canvas—this is responsive to whatever your canvas size is
 }
 
 

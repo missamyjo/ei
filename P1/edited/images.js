@@ -8,27 +8,15 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(612, 792);//this is the size of a letter-sized page in 72 dpi
     background(255);
     imageMode(CENTER);
 }
 
-function draw() {
-    fill("black");
-    textFont(myFont)
-        .textSize(40);
-    text('CLICK! CLICK! CLICK!', 600, 200);
-    fill("black")
-        .textSize(16);
-    text('to make a protest poster', 500, 300);
-    fill("black")
-        .textSize(16);
-    text('with Miss Amy Jo!', 700, 325);
-}
 
 function mouseClicked() {
     var index = int(random(8));
-    image(imgs[index], 775, 550);
+    image(imgs[index], 300, 400);
 }
 
 
