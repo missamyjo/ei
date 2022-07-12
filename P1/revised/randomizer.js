@@ -1,7 +1,7 @@
 
-var introList = new Array("Fight", "Nevertheless", "March", "Human Rights", "As long as", "Because", "Revolution", "Vote", "Still", "Smash");
-var pointsList = new Array("the", "she", "for", "are", "like", "we", "girl style", "out", "better", "Love");
-var sumList = new Array("Power", "Now", "Human Rights", "Feminism", "Persisted", "Progress", "Tear sh*t up");
+var introList = new Array("Fight", "March", "Human Rights", "Because", "Revolution", "Vote", "Still", "Smash");
+var pointsList = new Array("the", "for", "are", "like", "we", "girl style", "out", "protest", "Love");
+var sumList = new Array("Power", "Patriarchy", "Now", "Human Rights", "Feminism", "Persists", "Progress", "Tear sh*t up");
 
 var meOne = "";
 

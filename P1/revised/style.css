@@ -1,45 +1,75 @@
-html, body {
+@font-face {
+  font-family: "Coronette";
+  src: url('fonts/Coronette.otf');
+}
+  html, body {
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
-  font-family: 'Holtwood One SC', serif;
+  font-family: diazo-mvb-rough1-cond, sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
-h2,p{
-  text-align: center;
-}
-
-h1{
+h1 {
   text-align: left;
+  font-family: 'Coronette', serif;
+  font-weight:normal;
+  font-style:normal;
+  font-size: 2.5rem;
+  line-height: 64px;
 }
 
 h2{
-  font-size: xx-large;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: diazo-mvb-rough1-cond, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 7rem;
 }
 
+p { 
+  text-align: left;
+  font-family: 'Coronette', serif;
+  font-weight:normal;
+  font-style:normal;
+  font-size: 15.3px;
+  line-height: 20px;
+}
 main{
   display:block;
   width:612px;
   height:792px;
   position: absolute;
-  top:25px;
+  top:22px;
   left:30%;
 }/*in theory this should be the #images div but the canvas wants to draw in main. i tried to get it to use the #images div as the parent but that didn't work.*/
 
 #button{
-  background-color: pink;
+  background-color: hotpink;
+  border-radius: .5rem;
+  color: black;
   display:block;
   position: absolute;
   width:25%;
   top:25px;
-  left:2px;
+  left:12px;
+  padding: 0 10px 20px 20px
 }
 
 #text{
   width:612px;
   height:792px;
   position: absolute;
-  top:25px;
-  left:100%;
+  top:0px;
+  left:110%;
   z-index:5;
+}
+hr {
+width: 70;
+height: 3px;
+background-color: black;
+margin-right: 16px;
+margin-bottom: 36px;
+border-radius: 3px;
 }
